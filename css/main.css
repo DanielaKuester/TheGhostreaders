@@ -40,10 +40,6 @@ margin of the website and that there is a margin to the left and right */
 	text-transform: uppercase;
 }
 
-#hero__image {
-	width: 100%;
-}
-
 .title {
 	color: #7d97ad;
 	font-size: 26px;
@@ -114,6 +110,10 @@ margin without using a negative value?!?*/
 		margin-right: 5%;
 	}
 
+	#hero__image {
+		width: 100%;
+	}
+
 	#footer__container {
 		width: 80%;
 	}
@@ -138,6 +138,10 @@ margin without using a negative value?!?*/
 		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-between;
+	}
+
+	#hero__image {
+		width: 100%;
 	}
 
 	#footer__container {
@@ -169,6 +173,11 @@ margin without using a negative value?!?*/
 
 	.box {
 		width: 33.3333%;
+	}
+
+	#hero__image {
+		width: 75%;
+		position: center;
 	}
 
 	#footer__container {
