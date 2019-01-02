@@ -69,7 +69,8 @@ solve this problem without a negative value?!?*/
 
 .heading {
 	text-transform: uppercase;
-	font-size: 26px;
+	font-size: 1.5em;
+	text-align: left;
 }
 
 .image {
