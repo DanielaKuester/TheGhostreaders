@@ -1,0 +1,163 @@
+.body {
+	font-family: 'Quicksand', sans-serif;
+	color: #2d3c49;
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
+}
+
+#logo__code {
+	float: left;
+}
+
+.header__titles__list {
+	float: right;
+	text-align: right;
+	list-style: none outside;
+	margin-top: auto;
+}
+
+/* The "clear: both;" makes sure that the separator does not stick to the top
+margin of the website and that there is a margin to the left and right */
+.separator {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #7d97ad inset;
+	clear: both;
+}
+
+#header__title {
+	font-family: 'Lobster', cursive;
+	font-size: 2em;
+}
+
+#header__subtitle {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+#hero__image {
+	padding-top: 2em;
+	width: 100%;
+}
+
+.title {
+	color: #7d97ad;
+	font-size: 26px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* The CSS validator shows me here that negative values are not acceptable. If
+I don't choose a negative value, the text won't align to the left margin because
+of the invisible (but existing!) bullet point from the <li>-elements. How can I
+solve this problem without a negative value?!?*/
+.box {
+	box-sizing: content-box;
+	list-style: none outside;
+	margin-left: -40px;
+	text-align: justify;
+}
+
+.heading {
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+.image {
+	width: 100%;
+}
+
+.image:hover {
+	opacity: 0.7;
+}
+
+.fas {
+	color: #02b3e4;
+}
+
+.fab {
+	color: #2d3c49;
+}
+
+/* HELP! Same problem as above. How can I align the <li>-element to the left
+margin without using a negative value?!?*/
+.social__media {
+	list-style: none outside;
+	padding: 0 -40px;
+	margin: 0 -40px;
+}
+
+.social__media:hover {
+	opacity: 0.7;
+}
+
+/* Make site responsive to Google Nexus 5 (360px width) and slightly bigger screens */
+@media screen and (max-width: 500px) {
+	.body {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+#footer__container {
+	width: 70%;
+}
+
+/* Make site responsive to iPad, iPad Pro and other tablets */
+@media screen and (min-width: 501px) and (max-width:1299px) {
+	.body {
+		width: 95%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+	}
+
+	.title {
+		float: left;
+		width: 100%;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#footer__container {
+		width: 70%;
+	}
+
+	.box {
+		width: 50%;
+	}
+
+}
+
+/* Make site responsive to big screens (laptops or desktop monitors) */
+@media screen and (min-width: 1300px) {
+	.body {
+		max-width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.description {
+		text-align: justify;
+	}
+
+	.box {
+		width: 33.3333%;
+	}
+}
