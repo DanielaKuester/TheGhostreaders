@@ -35,9 +35,10 @@ margin of the website and that there is a margin to the left and right */
 	font-size: 2em;
 }
 
-#header__subtitle {
+#header__subtitle1, #header__subtitle2 {
 	font-size: 1.5em;
 	text-transform: uppercase;
+	margin: 5px 0;
 }
 
 .title {
