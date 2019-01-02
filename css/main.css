@@ -6,8 +6,12 @@
 	vertical-align: center;
 }
 
-#logo__code {
+#logo {
 	float: left;
+}
+
+.ghostreaders__logo {
+	width: 200px;
 }
 
 .header__titles__list {
