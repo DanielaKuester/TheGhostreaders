@@ -121,6 +121,17 @@ margin without using a negative value?!?*/
 
 }
 
+/* Keep the header titles to the left side of the screen when it doesn't fit next to the logo*/
+@media screen and (max-width: 900px) {
+	.header__titles__list {
+		float: left;
+		text-align: left;
+		list-style: none outside;
+		margin-top: auto;
+		padding: 0;
+	}
+}
+
 /* Make site responsive to iPad, iPad Pro and other tablets */
 @media screen and (min-width: 551px) and (max-width:1099px) {
 	.body {
