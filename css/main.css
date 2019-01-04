@@ -104,7 +104,7 @@ margin without using a negative value?!?*/
 }
 
 /* Make site responsive to Google Nexus 5 (360px width) and slightly bigger screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 	.body {
 		width: 90%;
 		margin-left: 5%;
@@ -122,7 +122,7 @@ margin without using a negative value?!?*/
 }
 
 /* Make site responsive to iPad, iPad Pro and other tablets */
-@media screen and (min-width: 501px) and (max-width:1299px) {
+@media screen and (min-width: 551px) and (max-width:1099px) {
 	.body {
 		width: 95%;
 		margin-left: 2.5%;
@@ -156,7 +156,7 @@ margin without using a negative value?!?*/
 }
 
 /* Make site responsive to big screens (laptops or desktop monitors) */
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1100px) {
 	.body {
 		max-width: 65%;
 		margin-left: auto;
